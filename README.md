@@ -23,26 +23,31 @@ shfn.helpPromise('getblockchaininfo').then(out =>
 ```
 
 ```
-shfn.abandontransaction      shfn.abortrescan             shfn.addmultisigaddress      shfn.addnode                 shfn.backupwallet
-shfn.bumpfee                 shfn.clearbanned             shfn.combinerawtransaction   shfn.createmultisig          shfn.createrawtransaction
-shfn.decoderawtransaction    shfn.decodescript            shfn.disconnectnode          shfn.dumpprivkey             shfn.dumpwallet
-shfn.encryptwallet           shfn.estimatefee             shfn.estimatesmartfee        shfn.fundrawtransaction      shfn.generate
-shfn.generatetoaddress       shfn.getaccount              shfn.getaccountaddress       shfn.getaddednodeinfo        shfn.getaddressesbyaccount
-shfn.getbalance              shfn.getbestblockhash        shfn.getblock                shfn.getblockchaininfo       shfn.getblockcount
-shfn.getblockhash            shfn.getblockheader          shfn.getblocktemplate        shfn.getchaintips            shfn.getchaintxstats
-shfn.getconnectioncount      shfn.getdifficulty           shfn.getmemoryinfo           shfn.getmempoolancestors     shfn.getmempooldescendants
-shfn.getmempoolentry         shfn.getmempoolinfo          shfn.getmininginfo           shfn.getnettotals            shfn.getnetworkhashps
-shfn.getnetworkinfo          shfn.getnewaddress           shfn.getpeerinfo             shfn.getrawchangeaddress     shfn.getrawmempool
-shfn.getrawtransaction       shfn.getreceivedbyaccount    shfn.getreceivedbyaddress    shfn.gettransaction          shfn.gettxout
-shfn.gettxoutproof           shfn.gettxoutsetinfo         shfn.getunconfirmedbalance   shfn.getwalletinfo           shfn.help
-shfn.helpPromise             shfn.importaddress           shfn.importmulti             shfn.importprivkey           shfn.importprunedfunds
-shfn.importpubkey            shfn.importwallet            shfn.keypoolrefill           shfn.listaccounts            shfn.listaddressgroupings
-shfn.listbanned              shfn.listlockunspent         shfn.listreceivedbyaccount   shfn.listreceivedbyaddress   shfn.listsinceblock
-shfn.listtransactions        shfn.listunspent             shfn.listwallets             shfn.lockunspent             shfn.logging
-shfn.move                    shfn.ping                    shfn.preciousblock           shfn.prioritisetransaction   shfn.pruneblockchain
-shfn.removeprunedfunds       shfn.rescanblockchain        shfn.savemempool             shfn.sendfrom                shfn.sendmany
-shfn.sendrawtransaction      shfn.sendtoaddress           shfn.setaccount              shfn.setban                  shfn.setnetworkactive
-shfn.settxfee                shfn.signmessage             shfn.signmessagewithprivkey  shfn.signrawtransaction      shfn.stop
-shfn.submitblock             shfn.uptime                  shfn.validateaddress         shfn.verifychain             shfn.verifymessage
-shfn.verifytxoutproof        shfn.walletlock              shfn.walletpassphrase        shfn.walletpassphrasechange 
+shfn.abandontransactionPromise      shfn.abortrescanPromise             shfn.addmultisigaddressPromise      shfn.addnodePromise
+shfn.backupwalletPromise            shfn.bumpfeePromise                 shfn.clearbannedPromise             shfn.combinerawtransactionPromise
+shfn.createmultisigPromise          shfn.createrawtransactionPromise    shfn.decoderawtransactionPromise    shfn.decodescriptPromise
+shfn.disconnectnodePromise          shfn.dumpprivkeyPromise             shfn.dumpwalletPromise              shfn.encryptwalletPromise
+shfn.estimatefeePromise             shfn.estimatesmartfeePromise        shfn.fundrawtransactionPromise      shfn.generatePromise
+shfn.generatetoaddressPromise       shfn.getaccountPromise              shfn.getaccountaddressPromise       shfn.getaddednodeinfoPromise
+shfn.getaddressesbyaccountPromise   shfn.getbalancePromise              shfn.getbestblockhashPromise        shfn.getblockPromise
+shfn.getblockchaininfoPromise       shfn.getblockcountPromise           shfn.getblockhashPromise            shfn.getblockheaderPromise
+shfn.getblocktemplatePromise        shfn.getchaintipsPromise            shfn.getchaintxstatsPromise         shfn.getconnectioncountPromise
+shfn.getdifficultyPromise           shfn.getmemoryinfoPromise           shfn.getmempoolancestorsPromise     shfn.getmempooldescendantsPromise
+shfn.getmempoolentryPromise         shfn.getmempoolinfoPromise          shfn.getmininginfoPromise           shfn.getnettotalsPromise
+shfn.getnetworkhashpsPromise        shfn.getnetworkinfoPromise          shfn.getnewaddressPromise           shfn.getpeerinfoPromise
+shfn.getrawchangeaddressPromise     shfn.getrawmempoolPromise           shfn.getrawtransactionPromise       shfn.getreceivedbyaccountPromise
+shfn.getreceivedbyaddressPromise    shfn.gettransactionPromise          shfn.gettxoutPromise                shfn.gettxoutproofPromise
+shfn.gettxoutsetinfoPromise         shfn.getunconfirmedbalancePromise   shfn.getwalletinfoPromise           shfn.helpPromise
+shfn.importaddressPromise           shfn.importmultiPromise             shfn.importprivkeyPromise           shfn.importprunedfundsPromise
+shfn.importpubkeyPromise            shfn.importwalletPromise            shfn.keypoolrefillPromise           shfn.listaccountsPromise
+shfn.listaddressgroupingsPromise    shfn.listbannedPromise              shfn.listlockunspentPromise         shfn.listreceivedbyaccountPromise
+shfn.listreceivedbyaddressPromise   shfn.listsinceblockPromise          shfn.listtransactionsPromise        shfn.listunspentPromise
+shfn.listwalletsPromise             shfn.lockunspentPromise             shfn.loggingPromise                 shfn.movePromise
+shfn.pingPromise                    shfn.preciousblockPromise           shfn.prioritisetransactionPromise   shfn.pruneblockchainPromise
+shfn.removeprunedfundsPromise       shfn.rescanblockchainPromise        shfn.savemempoolPromise             shfn.sendfromPromise
+shfn.sendmanyPromise                shfn.sendrawtransactionPromise      shfn.sendtoaddressPromise           shfn.setaccountPromise
+shfn.setbanPromise                  shfn.setnetworkactivePromise        shfn.settxfeePromise                shfn.signmessagePromise
+shfn.signmessagewithprivkeyPromise  shfn.signrawtransactionPromise      shfn.stopPromise                    shfn.submitblockPromise
+shfn.uptimePromise                  shfn.validateaddressPromise         shfn.verifychainPromise             shfn.verifymessagePromise
+shfn.verifytxoutproofPromise        shfn.walletlockPromise              shfn.walletpassphrasePromise        shfn.walletpassphrasechangePromise
 ```
