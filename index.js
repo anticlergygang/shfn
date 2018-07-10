@@ -1,6 +1,5 @@
 const util = require('util')
 const exec = util.promisify(require('child_process').exec)
-
 exports.helpPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined)
@@ -24,7 +23,6 @@ exports.helpPromise = params => {
             })
     })
 }
-
 exports.getbestblockhash = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined)
