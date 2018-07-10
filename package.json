@@ -1,0 +1,24 @@
+{
+  "name": "shfn",
+  "version": "1.0.0",
+  "description": "setHacked promisifed bitcoin core full node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anticlergygang/shfn.git"
+  },
+  "keywords": [
+    "sethacked",
+    "shfn",
+    "bitcoin"
+  ],
+  "author": "anticlergy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anticlergygang/shfn/issues"
+  },
+  "homepage": "https://github.com/anticlergygang/shfn#readme"
+}

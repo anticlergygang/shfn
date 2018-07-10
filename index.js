@@ -1,6 +1,6 @@
 const exec = util.promisify(require('child_process').exec)
 
-exports helpPromise = params => {
+exports.helpPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli help ${params}`).then(({ stdout, stderr }) => {
@@ -25,7 +25,7 @@ exports helpPromise = params => {
     })
 }
 
-exports getbestblockhashPromise = params => {
+exports.getbestblockhashPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getbestblockhash ${params}`).then(({ stdout, stderr }) => {
@@ -50,7 +50,7 @@ exports getbestblockhashPromise = params => {
     })
 }
 
-exports getblockPromise = params => {
+exports.getblockPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getblock ${params}`).then(({ stdout, stderr }) => {
@@ -75,7 +75,7 @@ exports getblockPromise = params => {
     })
 }
 
-exports getblockchaininfoPromise = params => {
+exports.getblockchaininfoPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getblockchaininfo ${params}`).then(({ stdout, stderr }) => {
@@ -100,7 +100,7 @@ exports getblockchaininfoPromise = params => {
     })
 }
 
-exports getblockcountPromise = params => {
+exports.getblockcountPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getblockcount ${params}`).then(({ stdout, stderr }) => {
@@ -125,7 +125,7 @@ exports getblockcountPromise = params => {
     })
 }
 
-exports getblockhashPromise = params => {
+exports.getblockhashPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getblockhash ${params}`).then(({ stdout, stderr }) => {
@@ -150,7 +150,7 @@ exports getblockhashPromise = params => {
     })
 }
 
-exports getblockheaderPromise = params => {
+exports.getblockheaderPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getblockheader ${params}`).then(({ stdout, stderr }) => {
@@ -175,7 +175,7 @@ exports getblockheaderPromise = params => {
     })
 }
 
-exports getchaintipsPromise = params => {
+exports.getchaintipsPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getchaintips ${params}`).then(({ stdout, stderr }) => {
@@ -200,7 +200,7 @@ exports getchaintipsPromise = params => {
     })
 }
 
-exports getchaintxstatsPromise = params => {
+exports.getchaintxstatsPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getchaintxstats ${params}`).then(({ stdout, stderr }) => {
@@ -225,7 +225,7 @@ exports getchaintxstatsPromise = params => {
     })
 }
 
-exports getdifficultyPromise = params => {
+exports.getdifficultyPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getdifficulty ${params}`).then(({ stdout, stderr }) => {
@@ -250,7 +250,7 @@ exports getdifficultyPromise = params => {
     })
 }
 
-exports getmempoolancestorsPromise = params => {
+exports.getmempoolancestorsPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getmempoolancestors ${params}`).then(({ stdout, stderr }) => {
@@ -275,7 +275,7 @@ exports getmempoolancestorsPromise = params => {
     })
 }
 
-exports getmempooldescendantsPromise = params => {
+exports.getmempooldescendantsPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getmempooldescendants ${params}`).then(({ stdout, stderr }) => {
@@ -300,7 +300,7 @@ exports getmempooldescendantsPromise = params => {
     })
 }
 
-exports getmempoolentryPromise = params => {
+exports.getmempoolentryPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getmempoolentry ${params}`).then(({ stdout, stderr }) => {
@@ -325,7 +325,7 @@ exports getmempoolentryPromise = params => {
     })
 }
 
-exports getmempoolinfoPromise = params => {
+exports.getmempoolinfoPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getmempoolinfo ${params}`).then(({ stdout, stderr }) => {
@@ -350,7 +350,7 @@ exports getmempoolinfoPromise = params => {
     })
 }
 
-exports getrawmempoolPromise = params => {
+exports.getrawmempoolPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getrawmempool ${params}`).then(({ stdout, stderr }) => {
@@ -375,7 +375,7 @@ exports getrawmempoolPromise = params => {
     })
 }
 
-exports gettxoutPromise = params => {
+exports.gettxoutPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli gettxout ${params}`).then(({ stdout, stderr }) => {
@@ -400,7 +400,7 @@ exports gettxoutPromise = params => {
     })
 }
 
-exports gettxoutproofPromise = params => {
+exports.gettxoutproofPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli gettxoutproof ${params}`).then(({ stdout, stderr }) => {
@@ -425,7 +425,7 @@ exports gettxoutproofPromise = params => {
     })
 }
 
-exports gettxoutsetinfoPromise = params => {
+exports.gettxoutsetinfoPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli gettxoutsetinfo ${params}`).then(({ stdout, stderr }) => {
@@ -450,7 +450,7 @@ exports gettxoutsetinfoPromise = params => {
     })
 }
 
-exports preciousblockPromise = params => {
+exports.preciousblockPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli preciousblock ${params}`).then(({ stdout, stderr }) => {
@@ -475,7 +475,7 @@ exports preciousblockPromise = params => {
     })
 }
 
-exports pruneblockchainPromise = params => {
+exports.pruneblockchainPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli pruneblockchain ${params}`).then(({ stdout, stderr }) => {
@@ -500,7 +500,7 @@ exports pruneblockchainPromise = params => {
     })
 }
 
-exports savemempoolPromise = params => {
+exports.savemempoolPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli savemempool ${params}`).then(({ stdout, stderr }) => {
@@ -525,7 +525,7 @@ exports savemempoolPromise = params => {
     })
 }
 
-exports verifychainPromise = params => {
+exports.verifychainPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli verifychain ${params}`).then(({ stdout, stderr }) => {
@@ -550,7 +550,7 @@ exports verifychainPromise = params => {
     })
 }
 
-exports verifytxoutproofPromise = params => {
+exports.verifytxoutproofPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli verifytxoutproof ${params}`).then(({ stdout, stderr }) => {
@@ -575,7 +575,7 @@ exports verifytxoutproofPromise = params => {
     })
 }
 
-exports getmemoryinfoPromise = params => {
+exports.getmemoryinfoPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getmemoryinfo ${params}`).then(({ stdout, stderr }) => {
@@ -600,7 +600,7 @@ exports getmemoryinfoPromise = params => {
     })
 }
 
-exports loggingPromise = params => {
+exports.loggingPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli logging ${params}`).then(({ stdout, stderr }) => {
@@ -625,7 +625,7 @@ exports loggingPromise = params => {
     })
 }
 
-exports stopPromise = params => {
+exports.stopPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli stop ${params}`).then(({ stdout, stderr }) => {
@@ -650,7 +650,7 @@ exports stopPromise = params => {
     })
 }
 
-exports uptimePromise = params => {
+exports.uptimePromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli uptime ${params}`).then(({ stdout, stderr }) => {
@@ -675,7 +675,7 @@ exports uptimePromise = params => {
     })
 }
 
-exports generatetoaddressPromise = params => {
+exports.generatetoaddressPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli generatetoaddress ${params}`).then(({ stdout, stderr }) => {
@@ -700,7 +700,7 @@ exports generatetoaddressPromise = params => {
     })
 }
 
-exports getblocktemplatePromise = params => {
+exports.getblocktemplatePromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getblocktemplate ${params}`).then(({ stdout, stderr }) => {
@@ -725,7 +725,7 @@ exports getblocktemplatePromise = params => {
     })
 }
 
-exports getmininginfoPromise = params => {
+exports.getmininginfoPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getmininginfo ${params}`).then(({ stdout, stderr }) => {
@@ -750,7 +750,7 @@ exports getmininginfoPromise = params => {
     })
 }
 
-exports getnetworkhashpsPromise = params => {
+exports.getnetworkhashpsPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getnetworkhashps ${params}`).then(({ stdout, stderr }) => {
@@ -775,7 +775,7 @@ exports getnetworkhashpsPromise = params => {
     })
 }
 
-exports prioritisetransactionPromise = params => {
+exports.prioritisetransactionPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli prioritisetransaction ${params}`).then(({ stdout, stderr }) => {
@@ -800,7 +800,7 @@ exports prioritisetransactionPromise = params => {
     })
 }
 
-exports submitblockPromise = params => {
+exports.submitblockPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli submitblock ${params}`).then(({ stdout, stderr }) => {
@@ -825,7 +825,7 @@ exports submitblockPromise = params => {
     })
 }
 
-exports addnodePromise = params => {
+exports.addnodePromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli addnode ${params}`).then(({ stdout, stderr }) => {
@@ -850,7 +850,7 @@ exports addnodePromise = params => {
     })
 }
 
-exports clearbannedPromise = params => {
+exports.clearbannedPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli clearbanned ${params}`).then(({ stdout, stderr }) => {
@@ -875,7 +875,7 @@ exports clearbannedPromise = params => {
     })
 }
 
-exports disconnectnodePromise = params => {
+exports.disconnectnodePromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli disconnectnode ${params}`).then(({ stdout, stderr }) => {
@@ -900,7 +900,7 @@ exports disconnectnodePromise = params => {
     })
 }
 
-exports getaddednodeinfoPromise = params => {
+exports.getaddednodeinfoPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getaddednodeinfo ${params}`).then(({ stdout, stderr }) => {
@@ -925,7 +925,7 @@ exports getaddednodeinfoPromise = params => {
     })
 }
 
-exports getconnectioncountPromise = params => {
+exports.getconnectioncountPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getconnectioncount ${params}`).then(({ stdout, stderr }) => {
@@ -950,7 +950,7 @@ exports getconnectioncountPromise = params => {
     })
 }
 
-exports getnettotalsPromise = params => {
+exports.getnettotalsPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getnettotals ${params}`).then(({ stdout, stderr }) => {
@@ -975,7 +975,7 @@ exports getnettotalsPromise = params => {
     })
 }
 
-exports getnetworkinfoPromise = params => {
+exports.getnetworkinfoPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getnetworkinfo ${params}`).then(({ stdout, stderr }) => {
@@ -1000,7 +1000,7 @@ exports getnetworkinfoPromise = params => {
     })
 }
 
-exports getpeerinfoPromise = params => {
+exports.getpeerinfoPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getpeerinfo ${params}`).then(({ stdout, stderr }) => {
@@ -1025,7 +1025,7 @@ exports getpeerinfoPromise = params => {
     })
 }
 
-exports listbannedPromise = params => {
+exports.listbannedPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli listbanned ${params}`).then(({ stdout, stderr }) => {
@@ -1050,7 +1050,7 @@ exports listbannedPromise = params => {
     })
 }
 
-exports pingPromise = params => {
+exports.pingPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli ping ${params}`).then(({ stdout, stderr }) => {
@@ -1075,7 +1075,7 @@ exports pingPromise = params => {
     })
 }
 
-exports setbanPromise = params => {
+exports.setbanPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli setban ${params}`).then(({ stdout, stderr }) => {
@@ -1100,7 +1100,7 @@ exports setbanPromise = params => {
     })
 }
 
-exports setnetworkactivePromise = params => {
+exports.setnetworkactivePromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli setnetworkactive ${params}`).then(({ stdout, stderr }) => {
@@ -1125,7 +1125,7 @@ exports setnetworkactivePromise = params => {
     })
 }
 
-exports combinerawtransactionPromise = params => {
+exports.combinerawtransactionPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli combinerawtransaction ${params}`).then(({ stdout, stderr }) => {
@@ -1150,7 +1150,7 @@ exports combinerawtransactionPromise = params => {
     })
 }
 
-exports createrawtransactionPromise = params => {
+exports.createrawtransactionPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli createrawtransaction ${params}`).then(({ stdout, stderr }) => {
@@ -1175,7 +1175,7 @@ exports createrawtransactionPromise = params => {
     })
 }
 
-exports decoderawtransactionPromise = params => {
+exports.decoderawtransactionPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli decoderawtransaction ${params}`).then(({ stdout, stderr }) => {
@@ -1200,7 +1200,7 @@ exports decoderawtransactionPromise = params => {
     })
 }
 
-exports decodescriptPromise = params => {
+exports.decodescriptPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli decodescript ${params}`).then(({ stdout, stderr }) => {
@@ -1225,7 +1225,7 @@ exports decodescriptPromise = params => {
     })
 }
 
-exports getrawtransactionPromise = params => {
+exports.getrawtransactionPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli getrawtransaction ${params}`).then(({ stdout, stderr }) => {
@@ -1250,7 +1250,7 @@ exports getrawtransactionPromise = params => {
     })
 }
 
-exports sendrawtransactionPromise = params => {
+exports.sendrawtransactionPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli sendrawtransaction ${params}`).then(({ stdout, stderr }) => {
@@ -1275,7 +1275,7 @@ exports sendrawtransactionPromise = params => {
     })
 }
 
-exports signrawtransactionPromise = params => {
+exports.signrawtransactionPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli signrawtransaction ${params}`).then(({ stdout, stderr }) => {
@@ -1300,7 +1300,7 @@ exports signrawtransactionPromise = params => {
     })
 }
 
-exports createmultisigPromise = params => {
+exports.createmultisigPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli createmultisig ${params}`).then(({ stdout, stderr }) => {
@@ -1325,7 +1325,7 @@ exports createmultisigPromise = params => {
     })
 }
 
-exports estimatefeePromise = params => {
+exports.estimatefeePromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli estimatefee ${params}`).then(({ stdout, stderr }) => {
@@ -1350,7 +1350,7 @@ exports estimatefeePromise = params => {
     })
 }
 
-exports estimatesmartfeePromise = params => {
+exports.estimatesmartfeePromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli estimatesmartfee ${params}`).then(({ stdout, stderr }) => {
@@ -1375,7 +1375,7 @@ exports estimatesmartfeePromise = params => {
     })
 }
 
-exports signmessagewithprivkeyPromise = params => {
+exports.signmessagewithprivkeyPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli signmessagewithprivkey ${params}`).then(({ stdout, stderr }) => {
@@ -1400,7 +1400,7 @@ exports signmessagewithprivkeyPromise = params => {
     })
 }
 
-exports validateaddressPromise = params => {
+exports.validateaddressPromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli validateaddress ${params}`).then(({ stdout, stderr }) => {
@@ -1425,7 +1425,7 @@ exports validateaddressPromise = params => {
     })
 }
 
-exports verifymessagePromise = params => {
+exports.verifymessagePromise = params => {
     return new Promise((resolve, reject) => {
         if (params !== undefined) {
             exec(`bitcoin-cli verifymessage ${params}`).then(({ stdout, stderr }) => {
