@@ -1,6 +1,6 @@
 {
   "name": "shfn",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "setHacked promisifed bitcoin core full node",
   "main": "index.js",
   "scripts": {
